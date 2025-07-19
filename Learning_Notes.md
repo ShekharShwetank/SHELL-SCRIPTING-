@@ -6,10 +6,10 @@ shell:  OS special prog.; accepts commands in English and passes to the Kernel.
 	not part of system kernel,  but uses system kernel.
 
 Types:
- BASH
- C Shell - CSH
- KSH
- TCSH- adv. unix C-shell
+ 1. BASH
+ 2. C Shell - CSH
+ 3. KSH
+ 4. TCSH- adv. unix C-shell
 
 COMMANDS:
 1. cat /etc/shells
@@ -20,8 +20,10 @@ COMMANDS:
 6. ls >> file.txt :: appends the files in the ls output to the file.txt 
 7. cp, mv, tar
 
+```bash
 vim special_var.sh
 sh special_var.sh arg1 arg2 arg3 .......
+```
 
 #Special Variable:
 1.  echo $0 - filename of current script
@@ -36,13 +38,12 @@ sh special_var.sh arg1 arg2 arg3 .......
 10. echo $!-PID of last background command
 
 # Special parameters and for loop can be combined together:
-bash
-"
+```bash
 for TOKEN in $*
 do
 	echo $TOKEN
 done
-"
+```
  
 # commands for Log Files:
 1.  less filename.extension
